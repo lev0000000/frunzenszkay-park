@@ -1,0 +1,13 @@
+.poster-block{
+    width: 456px;
+    min-height:600px;
+    border-radius: 0 0 600px 600px;
+
+    &--viewer-back{
+        background-image: url("../../images/photo-1.png");
+    }
+
+    &--viewer-around {
+        background-image: url("../../images/photo-2.png");
+    }
+}
