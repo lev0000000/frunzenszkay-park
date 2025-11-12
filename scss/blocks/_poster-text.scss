@@ -1,25 +1,25 @@
-.poster-text{
+.poster-text {
     width: 456px;
     min-height: 600px;
-    border-radius:  600px 600px 0 0;
+    border-radius: 600px 600px 0 0;
     border: 1px solid $color-fallow;
-    border-bottom:  0;
-    
+    border-bottom: 0;
 
-    &__wrapper{
+
+    &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 92px 0;
     }
 
-    &__logo{
+    &__logo {
         display: flex;
         flex-direction: column;
         gap: 30px;
         align-items: center;
 
-        &-text{
+        &-text {
             font-size: 18px;
             line-height: 26px;
             font-weight: 400;
@@ -29,13 +29,13 @@
         }
     }
 
-    &__elements{
+    &__elements {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    &__heading{
+    &__heading {
         font-family: $ff-tenor;
         font-weight: 400;
         font-size: 44px;
@@ -46,10 +46,59 @@
         text-transform: uppercase;
     }
 
-    &__little-desc{
+    &__little-desc {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        max-width: 92px;
+        list-style: none;
+        padding: 100px 0 58px;
+        margin: 0 auto;
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:10px 12px;
+        align-items: end;
+
+        &-right {
+            font-family: $ff-tenor;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-fallow;
+        }
+
+        &-left {
+            font-family: $ff-tenor;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-fallow;
+        }
+
+
+        &-bottom {
+            grid-row: 2;
+            grid-column: span 2;
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
 }

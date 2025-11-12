@@ -1,0 +1,39 @@
+.information {
+
+
+    &__wrapper {
+        display: flex;
+        gap: 168px;
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__list {
+        columns: 2;
+
+        &-item {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__left {
+        max-width: 800px;
+    }
+
+    &__right {
+        max-width: 400px;
+    }
+}

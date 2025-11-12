@@ -364,6 +364,7 @@ main {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  gap: 120px;
 }
 
 img {
@@ -669,6 +670,123 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+.poster-text__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  max-width: 92px;
+  list-style: none;
+  padding: 100px 0 58px;
+  margin: 0 auto;
+}
+.poster-text__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 12px;
+  align-items: end;
+}
+.poster-text__block-right {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c49a6c;
+}
+.poster-text__block-left {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c49a6c;
+}
+.poster-text__block-bottom {
+  grid-row: 2;
+  grid-column: span 2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.advantages__heading {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
+
+.information__wrapper {
+  display: flex;
+  gap: 168px;
+}
+.information__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.information__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.information__list {
+  -moz-columns: 2;
+       columns: 2;
+}
+.information__list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.information__left {
+  max-width: 800px;
+}
+.information__right {
+  max-width: 400px;
+}
+
+.information-secondary__blocks {
+  display: flex;
+  gap: 173px;
+}
+.information-secondary__text-block {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.information-secondary__heading {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #c49a6c;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+}
+.information-secondary__text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .socials {
