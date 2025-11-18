@@ -1,19 +1,19 @@
 .information-secondary {
 
-
     &__blocks {
         display: flex;
         gap: 173px;
     }
 
     &__text-block {
-        max-width: 480px;
+        max-width: 495px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     &__heading {
+        max-width: 440px;
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
@@ -21,10 +21,12 @@
         text-transform: uppercase;
         color: $color-fallow;
         font-family: $ff-tenor;
+        margin: 0 0 20px;
     }
 
     &__text-list {
         display: flex;
+        width: 100%;
         flex-direction: column;
         gap: 15px;
         font-weight: 400;
@@ -32,7 +34,15 @@
         line-height: 26px;
         letter-spacing: 0%;
         margin: 0;
-        padding: 0;
+        padding-left: 10px;
+
+        &-item {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+
+        }
     }
 
 

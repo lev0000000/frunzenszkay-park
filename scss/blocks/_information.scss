@@ -1,31 +1,36 @@
 .information {
 
-
     &__wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 400px;
         gap: 168px;
     }
 
     &__left{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding: 162px 0 125px;
     }
 
     &__text {
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
+        margin-bottom: 30px;
     }
 
     &__list {
         columns: 2;
+        padding: 0;
+        margin: 0;
 
         &-item {
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
             margin-bottom: 15px;
+            margin-left: 15px;
+            margin-right: 8px;
         }
     }
 

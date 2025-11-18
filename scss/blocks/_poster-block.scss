@@ -1,13 +1,47 @@
-.poster-block{
-    width: 456px;
-    min-height:600px;
+.poster-block {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
     border-radius: 0 0 600px 600px;
+    background-size: cover;
 
-    &--viewer-back{
+    @include vp-1023{
+        min-height: 350px;
+    }
+
+    &--reverse {
+        border-radius: 600px 600px 0 0;
+    }
+
+    &--viewer-back {
         background-image: url("../../images/photo-1.png");
+
+        @media (max-width:1023px){
+            background-image:url("../../images/photo-1-table.png");
+        }
     }
 
     &--viewer-around {
         background-image: url("../../images/photo-2.png");
+
+        &-xl {
+            background-image: url("../../images/photoset-2.png");
+        }
+
+        @include vp-1023{
+            display: none;
+        }
+    }
+
+    &--stage {
+        background-image: url("../../images/photoset-1.png");
+    }
+
+    &--family {
+        background-image: url("../../images/photoset-3.png");
+    }
+
+    &--room{
+        background-image: url("../../images/photo-4.png");
     }
 }

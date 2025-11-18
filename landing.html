@@ -45,6 +45,7 @@
       </div>
       <div class="hero__img-wrapper">
         <picture>
+          <source media="(max-width:1023px)" srcset="images/bg-table.jpg 1x, images/bg-table.jpg 2x">
           <img class="hero__image" src="./images/bg.jpg" alt="Вид набережной">
         </picture>
       </div>
@@ -53,7 +54,6 @@
       <div class="container">
         <div class="city-park__blocks">
           <div class="poster-block poster-block--viewer-back">
-
           </div>
           <div class="poster-text">
             <div class="poster-text__wrapper">
@@ -69,7 +69,7 @@
                   <svg class="poster-text__little-icon" width="16" height="22">
                     <use xlink:href="images/sprite.svg#icon-map"></use>
                   </svg>
-                  <span>Фрунзенская набережная, 30</span>
+                  <span class="poster-text__little-text">Фрунзенская набережная, 30</span>
                 </div>
               </div>
             </div>
@@ -78,11 +78,15 @@
         </div>
       </div>
     </section>
+    
     <section class="advantages">
       <div class="container">
-        <h2 class="advantages__heading">«ФРУНЗЕНСКАЯ НАБЕРЕЖНАЯ» — ДОЛГОЖДАННЫЙ И НЕПОВТОРИМЫЙ ЭЛИТНЫЙ КЛУБНЫЙ
-          ГОРОД-ПАРК
-          В ПРЕСТИЖНОМ И ЖЕЛАННОМ МЕСТЕ</h2>
+        <div class="advantages__heading">
+          <span class="advantages__heading-span">«ФРУНЗЕНСКАЯ НАБЕРЕЖНАЯ»
+            —</span>
+          <span class="advantages__heading-span">ДОЛГОЖДАННЫЙ И НЕПОВТОРИМЫЙ ЭЛИТНЫЙ </span>
+          <span class="advantages__heading-span">КЛУБНЫЙ ГОРОД-ПАРК В ПРЕСТИЖНОМ И ЖЕЛАННОМ МЕСТЕ</span>
+        </div>
       </div>
       <div class="advantages__img-wrapper">
         <picture>
@@ -90,6 +94,7 @@
         </picture>
       </div>
     </section>
+    <!-- 
     <section class="information">
       <div class="container">
         <div class="information__wrapper">
@@ -119,29 +124,25 @@
               <ul class="poster-text__list">
                 <li class="poster-text__list-item">
                   <div class="poster-text__block">
-                    <span class="poster-text__block-left">3,1</span>
-                    <span class="poster-text__block-right">га</span>
+                    <p class="poster-text__block-top">3,1<span class="poster-text__block-top-min">га</span></p>
                     <span class="poster-text__block-bottom">Двор-парк</span>
                   </div>
                 </li>
-                <li class="poster__list-item">
+                <li class="poster-text__list-item">
                   <div class="poster-text__block">
-                    <span class="poster-text__block-left">25</span>
-                    <span class="poster-text__block-right">м</span>
+                    <p class="poster-text__block-top">25<span class="poster-text__block-top-min">м</span></p>
                     <span class="poster-text__block-bottom">Бассейн в фитнесе</span>
                   </div>
                 </li>
-                <li class="poster__list-item">
+                <li class="poster-text__list-item">
                   <div class="poster-text__block">
-                    <span class="poster-text__block-left">730</span>
-                    <span class="poster-text__block-right">м²</span>
+                    <p class="poster-text__block-top">730<span class="poster-text__block-top-min">м²</span></p>
                     <span class="poster-text__block-bottom">Развивающих детских пространств</span>
                   </div>
                 </li>
-                <li class="poster__list-item">
+                <li class="poster-text__list-item">
                   <div class="poster-text__block">
-                    <span class="poster-text__block-left">150</span>
-                    <span class="poster-text__block-right">+</span>
+                    <p class="poster-text__block-top">150<span class="poster-text__block-top-min">+</span></p>
                     <span class="poster-text__block-bottom">Вариантов квартир</span>
                   </div>
                 </li>
@@ -176,20 +177,72 @@
           </div>
         </div>
         <div class="grade-size">
-
+          <div class="grade-size__wrapper">
+            <span class="grade-size__line">
+              <svg class="grade-size__arrow" width="16" height="16">
+                <use xlink:href="images/sprite.svg#icon-left-arrow"></use>
+              </svg>
+            </span>
+            <div class="grade-size__middle">
+              <p class="grade-size__text">3,1<span class="grade-size__text-min">га</span></p>
+              <span class="grade-size__desc">площадь двора-парка</span>
+            </div>
+            <span class="grade-size__line grade-size__line--right">
+              <svg class="grade-size__arrow" width="16" height="16">
+                <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
+              </svg>
+            </span>
+          </div>
         </div>
       </div>
     </section>
     <section class="benefit">
       <div class="container">
         <div class="benefit__wrapper">
+          <div class="benefit__top">
+            <h2 class="benefit__heading">лучшая архитектура своей эпохи</h2>
+            <p class="benefit__text">В едином ансамбле переплетены три узнаваемых архитектурных стиля</p>
+          </div>
+          <div class="benefit__set">
+            <div class="benefit__set-block">
+              <div class="poster-block poster-block--stage">
+              </div>
+              <p class="benefit__desc">СТЕКЛЯННЫЕ БАШНИ В СОВРЕМЕННОМ СТИЛЕ</p>
+            </div>
+            <div class="benefit__set-block">
+              <div class="poster-block poster-block--reverse poster-block--viewer-around-xl "></div>
+              <p class="benefit__desc">ВЕЛИЧЕСТВЕННЫЙ ДОМ В СТИЛЕ СТАЛИНСКИЙ АМПИР С ВИДАМИ НА НАБЕРЕЖНУЮ</p>
+            </div>
+            <div class="benefit__set-block">
+              <div class="poster-block poster-block--family"></div>
+              <p class="benefit__desc">ДОМА В СТИЛЕ АВАНГАРД ВОКРУГ ЦЕНТРАЛЬНОГО ПАРКА</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="benefit">
+    <section class="luxury">
       <div class="container">
-        <div class="benefit__wrapper">
-
+        <div class="luxury__wrapper">
+          <div class="luxury__left">
+            <h2 class="luxury__heading">
+              роскошные квартиры, виллы и пентхаусы
+            </h2>
+            <p class="luxury__text">Редкие форматы: квартиры с потолками 7 метров и антресолями, флетхаусы и двухэтажные
+              ситихаусы, пентхаусы с бассейном, виллы с частным патио.</p>
+            <button class="btn-request" type="button">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="luxury__right">
+            <div class="poster-text">
+              <div class="poster-text__wrapper poster-text__wrapper--xl">
+                <span class="poster-text__flat-text">150</span>
+                <p class="poster-text__desc">ВАРИАНТОВ ПЛАНИРОВОЧНЫХ РЕШЕНИЙ</p>
+              </div>
+            </div>
+            <div class="poster-block poster-block--room"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -199,7 +252,7 @@
           <img class="lower-flat__image" src="./images/bg3.jpg" alt="Фото холла жилого комлекса">
         </picture>
       </div>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
     <div class="container">

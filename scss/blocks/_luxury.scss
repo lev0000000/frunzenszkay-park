@@ -1,0 +1,43 @@
+.luxury {
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 800px;
+        gap: 85px;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 485px;
+    }
+
+    &__right{
+        display: flex;
+        width: 100%;
+        min-height: 700px;
+    }
+
+    &__heading {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: $color-fallow;
+        margin: 0 0 30px;
+    }
+
+    &__text {
+        font-family: $ff-roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 40px;
+    }
+
+
+}

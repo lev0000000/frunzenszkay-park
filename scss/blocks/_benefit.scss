@@ -1,0 +1,67 @@
+.benefit {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__heading {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        color: $color-fallow;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    &__text {
+        font-family: $ff-roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    &__set {
+        display: flex;
+        min-height: 800px;
+        max-width: 12080px;
+        gap: 84px;
+
+        &-block{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 700px 1fr;
+            gap: 20px;
+        }
+    }
+
+    &__desc {
+        font-family:$ff-tenor;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -0.08em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-fallow;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__set-block:first-child &__desc{
+        padding: 0 30px;
+    }
+}
