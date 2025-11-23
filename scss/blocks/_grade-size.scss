@@ -1,11 +1,14 @@
 .grade-size {
-    padding: 120px 10px 0;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 65px;
+
+        @include vp-1023{
+            gap: 44px;
+        }
     }
 
     
@@ -43,8 +46,15 @@
 
     &__middle {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         gap: 30px;
+
+        &-block{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &__text {
@@ -61,10 +71,21 @@
         color: $color-fallow;
         gap: 15px;
 
+        @include vp-1023{
+            font-size: 90px;
+            line-height: 70px;
+            align-items: center;
+        }
+
         &-min {
             font-size: 34px;
             line-height: 44px;
             letter-spacing: 0;
+
+            @include vp-1023{
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
     }
 
@@ -73,5 +94,12 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 26px;
+
+        @include vp-1023{
+            font-size: 14px;
+            line-height: 20px;
+            width: 143px;
+        }
     }
+
 }

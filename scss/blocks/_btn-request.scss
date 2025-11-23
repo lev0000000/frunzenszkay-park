@@ -9,4 +9,8 @@
     line-height: 26px;
     font-weight: 400;
     font-family: $ff-roboto;
+
+    @include vp-1023{
+        
+    }
 }

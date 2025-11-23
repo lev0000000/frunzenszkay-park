@@ -4,9 +4,12 @@
     border-radius: 600px 600px 0 0;
     border: 1px solid $color-fallow;
     border-bottom: 0;
+    padding: 92px 0;
+
 
     @include vp-1023{
         min-height: 350px;
+        padding: 38px 0;
     }
 
 
@@ -14,15 +17,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 92px 0;
-
         &--xl {
             padding: 241px 70px;
         }
 
         @include vp-1023{
-            padding: 42px 0;
+
+            &--xl{
+                padding: 133px 0;
+            }
         }
+
+
     }
 
     &__logo {
@@ -33,6 +39,7 @@
         margin-bottom: 10px;
 
         @include vp-1023{
+            margin: 0 0 5px;
             gap: 20px;
         }
 
@@ -52,8 +59,8 @@
 
         &-icon{
             @include vp-1023{
-                width: 62px;
-                height: 86px;
+                width: 70px;
+                height: 94px;
             }
         }
     }
@@ -97,6 +104,11 @@
         text-transform: uppercase;
         color: $color-fallow;
         margin-bottom: 40px;
+
+        @include vp-1023{
+            font-size: 90px;
+            line-height: 70px;
+        }
     }
 
     &__desc {
@@ -110,6 +122,11 @@
         text-transform: uppercase;
         max-width: 200px;
         margin: 0;
+
+        @include vp-1023{
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 
     &__little-desc {

@@ -1,0 +1,76 @@
+.poster-tape {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 150px);
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+
+
+            &--icons-low .poster-tape__text {
+                margin-bottom: 20px;
+            }
+
+            &--icons-up .poster-tape__block-icon {
+                width: 40px;
+                height: 40px;
+                margin-top: 17px;
+                margin-bottom: 20px;
+            }
+
+             
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+        justify-content: start;
+
+        &--low {
+            padding-top: 80px;
+        }
+
+        &--low .poster-tape__number{
+            align-items: center;
+        }
+
+
+    }
+
+    &__number {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+        font-family: $ff-tenor;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-fallow;
+        margin: 0 0 10px;
+
+
+        &-text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__text {
+        font-family: $ff-roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+    }
+}

@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="advantages">
       <div class="container">
         <div class="advantages__heading">
@@ -90,11 +90,11 @@
       </div>
       <div class="advantages__img-wrapper">
         <picture>
+          <source media="(max-width:1023px)" srcset="images/bg2-table.jpg 1x, images/bg2-table@2x.jpg 2x">
           <img class="advantages__image" src="./images/bg2.jpg" alt="Вид на мост и катер с набережной">
         </picture>
       </div>
     </section>
-    <!-- 
     <section class="information">
       <div class="container">
         <div class="information__wrapper">
@@ -107,7 +107,8 @@
               <li class="information__list-item">Clubhouse — беспрецедентный инфраструктурный центр в отдельном здании
                 для здоровья, детей и общения;</li>
               <li class="information__list-item">соседский центр для знакомства и общения людей своего круга;</li>
-              <li class="information__list-item">богатейшая инфраструктура для детей — детская площадка, игровой центр
+              <li class="information__list-item information__list-item--flat">богатейшая инфраструктура для детей —
+                детская площадка, игровой центр
                 и бассейн;</li>
               <li class="information__list-item">фитнес с 25-метровым бассейном и спа;</li>
               <li class="information__list-item">площадка для командных видов спорта на улице, единственная в элитном
@@ -149,53 +150,99 @@
               </ul>
             </div>
           </div>
+          <div class="information__bottom">
+            <div class="poster-tape">
+              <div class="poster-tape__wrapper">
+                <ul class="poster-tape__list">
+                  <li class="poster-tape__list-item">
+                    <div class="poster-tape__block poster-tape__block--up">
+                      <p class="poster-tape__number">3,1<span class="poster-tape__number-text">га</span></p>
+                      <span class="poster-tape__text">Двор-парк</span>
+                    </div>
+                  </li>
+                  <li class="poster-tape__list-item poster-tape__list-item--icons-up">
+                    <div class="poster-tape__block">
+                      <svg class="poster-tape__block-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#icon-waves"></use>
+                      </svg>
+                      <p class="poster-tape__number">25<span class="poster-tape__number-text">м</span></p>
+                      <span class="poster-tape__text">Бассейн в фитнесе</span>
+                    </div>
+                  </li>
+                  <li class="poster-tape__list-item poster-tape__list-item--icons-low">
+                    <div class="poster-tape__block">
+                      <p class="poster-tape__number">730<span class="poster-tape__number-text">м²</span></p>
+                      <span class="poster-tape__text">Развивающих детских пространств</span>
+                      <svg class="poster-tape__block-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#icon-people"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="poster-tape__list-item">
+                    <div class="poster-tape__block poster-tape__block--low">
+                      <p class="poster-tape__number">150<span class="poster-tape__number-text">+</span></p>
+                      <span class="poster-tape__text">Вариантов квартир</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="information-secondary">
       <div class="container">
-        <div class="information-secondary__blocks">
-          <div class="information-secondary__img-wrapper">
-            <picture>
-              <img class="information-secondary__image" src="./images/photo-3.png" srcset="./images/photo-3.png" alt="">
-            </picture>
-          </div>
-          <div class="information-secondary__text-block">
-            <h2 class="information-secondary__heading">самый большой в элитном сегменте двор-парк 3,1 га</h2>
-            <ul class="information-secondary__text-list">
-              <li class="information-secondary__text-list-item">множество маршрутов для прогулок и тихие зоны у воды;
-              </li>
-              <li class="information-secondary__text-list-item">витражный парк под соснами с насыщенным всесезонным
-                озеленением;</li>
-              <li class="information-secondary__text-list-item">оазисы комфорта — зелёные комнаты с мягкой мебелью и
-                шезлонгами;</li>
-              <li class="information-secondary__text-list-item">многофункциональная площадка для командных видов спорта
-                (360 кв. м), зона воркаута, пространство для йоги и медитации;</li>
-              <li class="information-secondary__text-list-item">детская игровая площадка (600 кв. м) самая большая в
-                элитном классе.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="grade-size">
-          <div class="grade-size__wrapper">
-            <span class="grade-size__line">
-              <svg class="grade-size__arrow" width="16" height="16">
-                <use xlink:href="images/sprite.svg#icon-left-arrow"></use>
-              </svg>
-            </span>
-            <div class="grade-size__middle">
-              <p class="grade-size__text">3,1<span class="grade-size__text-min">га</span></p>
-              <span class="grade-size__desc">площадь двора-парка</span>
+        <div class="information-secondary__wrapper">
+          <div class="information-secondary__blocks">
+            <div class="information-secondary__img-wrapper">
+              <picture>
+                <source media="(max-width:1023px)" srcset="images/photo-3-table.png 1x, images/photo-3-table@2x.png 2x">
+                <img class="information-secondary__image" src="./images/photo-3.png" srcset="./images/photo-3.png"
+                  alt="">
+              </picture>
             </div>
-            <span class="grade-size__line grade-size__line--right">
-              <svg class="grade-size__arrow" width="16" height="16">
-                <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
-              </svg>
-            </span>
+            <div class="information-secondary__text-block">
+              <h2 class="information-secondary__heading">самый большой в элитном сегменте двор-парк 3,1 га</h2>
+              <ul class="information-secondary__text-list">
+                <li class="information-secondary__text-list-item">множество маршрутов для прогулок и тихие зоны у воды;
+                </li>
+                <li class="information-secondary__text-list-item">витражный парк под соснами с насыщенным всесезонным
+                  озеленением;</li>
+                <li class="information-secondary__text-list-item">оазисы комфорта — зелёные комнаты с мягкой мебелью и
+                  шезлонгами;</li>
+                <li class="information-secondary__text-list-item">многофункциональная площадка для командных видов
+                  спорта
+                  (360 кв. м), зона воркаута, пространство для йоги и медитации;</li>
+                <li class="information-secondary__text-list-item">детская игровая площадка (600 кв. м) самая большая в
+                  элитном классе.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grade-size">
+            <div class="grade-size__wrapper">
+              <div class="grade-size__middle">
+                <span class="grade-size__line">
+                  <svg class="grade-size__arrow" width="16" height="16">
+                    <use xlink:href="images/sprite.svg#icon-left-arrow"></use>
+                  </svg>
+                </span>
+                <div class="grade-size__middle-block">
+                  <p class="grade-size__text">3,1<span class="grade-size__text-min">га</span></p>
+                  <span class="grade-size__desc">площадь двора-парка</span>
+                </div>
+                <span class="grade-size__line grade-size__line--right">
+                  <svg class="grade-size__arrow" width="16" height="16">
+                    <use xlink:href="images/sprite.svg#icon-right-arrow"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="benefit">
       <div class="container">
         <div class="benefit__wrapper">
@@ -221,6 +268,7 @@
         </div>
       </div>
     </section>
+
     <section class="luxury">
       <div class="container">
         <div class="luxury__wrapper">
@@ -249,10 +297,11 @@
     <section class="lower-flat">
       <div class="lower-flat__wrapper-img">
         <picture>
+          <source media="(max-width:1023px)" srcset="images/bg3-table.jpg 1x, images/bg-3-table@2x.jpg 2x">
           <img class="lower-flat__image" src="./images/bg3.jpg" alt="Фото холла жилого комлекса">
         </picture>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer class="footer">
     <div class="container">

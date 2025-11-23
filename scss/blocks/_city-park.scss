@@ -1,13 +1,14 @@
 .city-park{
     min-height: 600px;
+    width: 100%;
 
     @include vp-1023{
-
         min-height: 350px;
         
         .container{
-            padding: 0;
+            padding: 0 118px;
         }
+        
     }
 
     &__blocks{
@@ -15,7 +16,7 @@
 
         @include vp-1023{
             display: grid;
-            grid-template-columns: repeat(2,350px);
+            grid-template-columns: repeat(2,266px);
         }
     }
 
