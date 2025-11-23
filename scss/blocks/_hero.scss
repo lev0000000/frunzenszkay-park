@@ -51,10 +51,10 @@
 
     &__image {
         width: 100%;
-        min-height: 740px;
+        height: 740px;
 
         @include vp-1023{
-            min-height: 460px;
+           height: 460px;
         }
     }
 

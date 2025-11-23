@@ -1,25 +1,36 @@
-.city-park{
+.city-park {
     min-height: 600px;
     width: 100%;
 
-    @include vp-1023{
+    @include vp-1023 {
         min-height: 350px;
-        
-        .container{
+
+        .container {
             padding: 0 118px;
         }
-        
+
     }
 
-    &__blocks{
+    &__blocks {
         display: flex;
 
-        @include vp-1023{
+        @include vp-1023 {
             display: grid;
-            grid-template-columns: repeat(2,266px);
+            grid-template-columns: repeat(2, 266px);
+        }
+
+        @media (max-width:750px) {
+            grid-template-columns: repeat(2, 240px);
+        }
+
+        @media (max-width:700px) {
+            grid-template-columns: repeat(2, 220px);
+        }
+        @media (max-width:680px) {
+            grid-template-columns: repeat(2, 200px);
         }
     }
 
-    
+
 
 }

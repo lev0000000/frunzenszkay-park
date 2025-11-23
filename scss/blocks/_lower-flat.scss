@@ -1,0 +1,11 @@
+.lower-flat{
+
+    &__image{
+        width: 100%;
+        height: 500px;
+
+        @include vp-1023{
+            height: 280px;
+        }
+    }
+}
